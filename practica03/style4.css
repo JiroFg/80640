@@ -1,0 +1,13 @@
+.padre{
+    background-color: orange;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hijo{
+    background-color: blue;
+    width: 200px;
+    margin: 10px;
+}
