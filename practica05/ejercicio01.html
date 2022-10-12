@@ -33,6 +33,25 @@
             });
         }
 
+        function cambiarColores3(color){
+            let i = 0
+            let c = document.getElementsByClassName("parrafo")
+            for(let x in c){
+                if(i < c.length){
+                    c[x].style.color = color;
+                    i++
+                }
+            }
+        }
+
+        function cambiarColores4(color){
+            let c = document.getElementsByClassName("parrafo")
+            for(const x in c){
+                if(Object.hasOwnProperty.call(c,x)){
+                    let element = c[x].style.color = color
+                }
+            }
+        }
         
     </script>
 </head>
@@ -43,6 +62,6 @@
     <button onclick="cambiarColor('blue')">Azul</button>
     <button onclick="cambiarColor('red')">Rojo</button>
     <button onclick="cambiarColor2('yellow'), cambiarColor3('yellow')">Amarillo</button>
-    <button onclick="cambiarColores('pink')">Colores</button>
+    <button onclick="cambiarColores4('orange')">Colores</button>
 </body>
 </html>
